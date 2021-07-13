@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="217dp"
+        android:layout_height="43dp"
+        android:text="@string/textView"
+        android:textColor="#0B8E10"
+        android:textColorLink="#B38B14"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.244"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/idToolbar"
+        android:layout_width="451dp"
+        android:layout_height="682dp"
+        android:layout_marginTop="136dp"
+        android:background="#D5D0D0"
+        android:minHeight="?attr/actionBarSize"
+        android:outlineAmbientShadowColor="@color/material_on_surface_emphasis_medium"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="#838383" />
+
+    <RadioButton
+        android:id="@+id/idProfileButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/radioText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.208" />
+
+    <ImageView
+        android:id="@+id/idImgMe"
+        android:layout_width="447dp"
+        android:layout_height="480dp"
+        android:layout_marginTop="158dp"
+        android:adjustViewBounds="true"
+        android:alpha="?android:attr/secondaryContentAlpha"
+        android:cropToPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/idToolbar"
+        app:srcCompat="@drawable/thumbnail" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

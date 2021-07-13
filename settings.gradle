@@ -1,0 +1,2 @@
+rootProject.name = "Connecting2Interfaces"
+include ':app'
